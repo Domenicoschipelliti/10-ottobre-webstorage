@@ -13,15 +13,15 @@
 // }
 
 // saveSession()
-let timer=0
+
 const timerElements = document.querySelectorAll('#contatore');
 
-let intervalId
+
 
 function startTimer(durationInSeconds,display) {
-     timer = durationInSeconds;
+     const timer = durationInSeconds;
 
-     intervalId = setInterval(function () {
+    const intervalId = setInterval(function () {
         // console.log(timer);
         display.textContent = timer;
 
